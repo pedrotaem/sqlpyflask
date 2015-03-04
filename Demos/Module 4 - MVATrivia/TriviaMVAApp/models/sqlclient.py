@@ -2,7 +2,7 @@ import pypyodbc;
 
 class Client(object):
     def __init__(self):
-        connectionString = 'Driver={SQL Server};Server=tcp:testpython.database.windows.net,1433;Database=test;Uid=test@testpython;Pwd=P@ssw0rd;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;';
+        connectionString = 'Driver={SQL Server};Server=tcp:rdlu1d1px9.database.windows.net,1433;Database=QuizDB;Uid=mikey@rdlu1d1px9;Pwd=P@ssw0rd;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;';
         self.connection = pypyodbc.connect(connectionString);
         self.cursor = self.connection.cursor();
         return;
